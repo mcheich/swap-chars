@@ -8,10 +8,12 @@ public class SwapChars {
 
 	public static String swap2(String str) {
 		
-		int strlength = str.length(); //Less expensive
-		
-		char lastCharacter = str.charAt(strlength-1);
-		char secondToLastCharacter = str.charAt(strlength-2);
+		int strLength = str.length(); //Less expensive
+		if(strLength < 2) {
+			return str;
+		}
+		char lastCharacter = str.charAt(strLength-1);
+		char secondToLastCharacter = str.charAt(strLength-2);
 		return "" +lastCharacter + secondToLastCharacter;
 	}
 
