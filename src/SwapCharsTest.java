@@ -18,5 +18,10 @@ class SwapCharsTest {
 	void swapStringWith1Char() {
 		assertEquals("1",SwapChars.swap2("1"));
 	}
+	
+	@Test
+	void swapEmptyString() {
+		assertEquals("",SwapChars.swap2(""));
+	}
 
 }
